@@ -1,11 +1,13 @@
-import { FC, ReactNode } from 'react'
+import { FC, ReactNode } from "react";
 
 interface layoutProps {
-  children: ReactNode
+  children: ReactNode;
 }
 
-const layout: FC<layoutProps> = ({children}) => {
-  return <div className='bg-red-400 h-screen'>{children}</div>
-}
+const layout: FC<layoutProps> = ({ children }) => {
+  return (
+    <div className="flex items-center justify-center h-screen">{children}</div>
+  );
+};
 
-export default layout
+export default layout;
