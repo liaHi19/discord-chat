@@ -1,4 +1,4 @@
-
+import { UserButton } from "@clerk/nextjs";
 import { FC } from "react";
 
 interface HomeProps {}
@@ -6,7 +6,7 @@ interface HomeProps {}
 const Home: FC<HomeProps> = ({}) => {
   return (
     <div>
-    This is a protected route
+      <UserButton afterSignOutUrl="/" />
     </div>
   );
 };
